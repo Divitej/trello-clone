@@ -1,0 +1,24 @@
+.add-card{
+    width: 300px;
+    border: 2px dashed #929495;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+.add-card p{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 596px) {
+    .add-card{
+        width: 100%;   
+        margin: 0;
+        margin-bottom: 12px;
+
+    }
+}

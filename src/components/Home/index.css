@@ -1,0 +1,30 @@
+.home{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns per row */
+    gap: 10px;
+    overflow-x: auto;
+}
+
+
+.three-dots{
+    cursor: pointer;
+}
+
+.design,.prototip,.trello,.test,.final{
+    margin: 24px;
+}
+
+.home::-webkit-scrollbar {
+    height: 12px;
+  }
+.home::-webkit-scrollbar-thumb{
+    background-color: #929495;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 596px) {
+    .design,.prototip,.trello,.test,.final{
+        width: 94vw;
+        margin: 3vw;
+    }
+}

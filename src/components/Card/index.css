@@ -1,0 +1,91 @@
+.card{
+    width: 300px;
+    overflow: hidden;
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 16px;
+    padding: 20px 0px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.card-img{
+    width: 90%;
+    height: 175px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+.colors-underline{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0px;
+    margin-bottom: 10px;
+}
+.card-description{
+    width: 90%;
+}
+.card-description h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card-description p{
+    font-size: 16px;
+    color: #929495;
+    text-align: justify;
+}
+
+.card-footer{
+    margin-top: 5%;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.following-profile-images img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.following-profile-images :not(:first-child){
+    margin-left: -9px;
+}
+.card-footer-right{
+    display: flex;
+    gap: 4px;
+}
+
+.card-footer-right span{
+    color: #929495;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 596px) {
+    .card{
+        width: 100%;   
+        margin: 0;
+        margin-bottom: 12px;
+
+    }
+    .card-description h3{
+        font-size: 22px;
+    }
+    .card-description p{
+        font-size: 20px;
+    }
+    
+    .card-footer-right{
+        gap: 2px;
+    }
+    .card-footer-right span{
+        gap: 2px;
+        font-size: 14px;
+    }
+}

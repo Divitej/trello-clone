@@ -1,0 +1,22 @@
+.topHead{
+    width: 300px;
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #929495;
+}
+.topHead span{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 596px) {
+    .topHead{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+}
